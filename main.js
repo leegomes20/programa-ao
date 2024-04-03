@@ -13,5 +13,11 @@ for (let i = 0; i < botoes.length; i++) {// loop que executa enquanto i<quantida
         textos[i].classList.add("ativo");//adiciona a palavra ativo da classe.
     }
     console.log();
+    
+    const contadores = document.querySelectorAll(".contador");
+    contadores[0].textContent= "contagem regressiva";
+
+    const tempoObjetivol = new Data();
+
 }
 
