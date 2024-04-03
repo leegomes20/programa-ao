@@ -13,14 +13,14 @@ for (let i = 0; i < botoes.length; i++) {// loop que executa enquanto i<quantida
         textos[i].classList.add("ativo");//adiciona a palavra ativo da classe.
     }
     console.log();
-    
+
     const contadores = document.querySelectorAll(".contador");
 
-    const tempoObjetivol = new Data("24-10-06");
+    const tempoObjetivol = new Data("24-10-06T00:00:00");
+    let tempoAtual = new Date();
+    contadores[0].textContent = "tempoObjetivol" - tempoAtual;
 
-    contadores[0].textContent= "tempoObjetivol";
-
-    
 
 }
+
 
