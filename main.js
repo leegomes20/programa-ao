@@ -16,9 +16,15 @@ for (let i = 0; i < botoes.length; i++) {// loop que executa enquanto i<quantida
 
 const contadores = document.querySelectorAll(".contador");
 
-const tempoObjetivol = new Data("2024-10-05T00:00:00");
+const tempoObjetivo1 = new Data("2024-10-05T00:00:00");
+const tempoObjetivo2 = new Data("2024-10-05T00:00:00");
+const tempoObjetivo3 = new Data("2024-10-05T00:00:00");
+const tempoObjetivo4 = new Data("2024-10-05T00:00:00");
 
 contadores[0].textContent = calculaTempo(tempoObjetivo);
+contadores[1].textContent = calculaTempo(tempoObjetivo);
+contadores[2].textContent = calculaTempo(tempoObjetivo);
+contadores[3].textContent = calculaTempo(tempoObjetivo);
 
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
