@@ -21,7 +21,7 @@ const tempoObjetivo2 = new Data("2024-10-05T00:00:00");
 const tempoObjetivo3 = new Data("2024-10-05T00:00:00");
 const tempoObjetivo4 = new Data("2024-10-05T00:00:00");
 
-const tempo[tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
+const tempo = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 
 
 contadores[0].textContent = calculaTempo(tempoObjetivo1);
@@ -40,7 +40,7 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;
     horas % 24;
     if (tempofinal > 0) {
-        return [dias + "dias" - hora + "horas" + minutos + "minutos" + segundos + "segundos";]
+        return [dias + "dias" - hora + "horas" + minutos + "minutos" + segundos + "segundos"];
         //print(dias);
     }
     else { return "Prazo Finalizado" }
@@ -48,7 +48,7 @@ function calculaTempo(tempoObjetivo) {
 function atualizacronometro() {
     for (let i = 0; i < contadores.length; i++) {
 
-        contadores[i]textContent = calculatempo(tempos[i]);
+        contadores[i].textContent = calculatempo(tempos[i]);
     }
 
 }
