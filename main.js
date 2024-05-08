@@ -43,7 +43,7 @@ function calculaTempo(tempoObjetivo) {
         return [dias + "dias" - hora + "horas" + minutos + "minutos" + segundos + "segundos"];
         //print(dias);
     }
-    else { return "Prazo Finalizado" }
+    else { return [0,0,0,0]}
 }
 function atualizacronometro() {
     for (let i = 0; i < contadores.length; i++) {
