@@ -38,6 +38,7 @@ function calculaTempo(tempoObjetivo) {
     let dias = Math.floor(horas / 24)
     segundos %= 60;
     minutos %= 60;
+
     horas % 24;
     if (tempofinal > 0) {
         return [dias + "dias" - hora + "horas" + minutos + "minutos" + segundos + "segundos"];
@@ -46,18 +47,23 @@ function calculaTempo(tempoObjetivo) {
     else { return [0,0,0,0]}
 }
 function atualizacronometro() {
-    for (let i = 0; i < contadores.length; i++) {
-
-        contadores[i].textContent = calculatempo(tempos[i]);
+    document.getElementById("dias0").textContent = calculaTempo(tempos[0])[0];
+    document.getElementById("horas0").textContent = calculaTempo(tempos[0])[1];
+    document.getElementById("min0").textContent = calculaTempo(tempos[0])[2];
+    document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
+   
+    for (let i=0; i<contadores.length;i++){
+        document.getElementById("seg1").textContent = calculaTempo(tempos[1])[3];
     }
-
 }
+
+
 function comecaCronometro() {
     atualizacronometro();
     setInterval(atualizacronometro, 1000);
 
 }
-comecaCronometro();
+//comecaCronometro()[]
 
 
 
